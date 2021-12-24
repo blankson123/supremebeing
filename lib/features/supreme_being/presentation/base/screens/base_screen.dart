@@ -10,13 +10,13 @@ import 'package:supreme_being/features/supreme_being/presentation/widgets/naviga
 // local imports
 import '/core/core.dart';
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class BaseScreen extends StatefulWidget {
+  const BaseScreen({Key? key}) : super(key: key);
   @override
-  _MainScreenState createState() => _MainScreenState();
+  _BaseScreenState createState() => _BaseScreenState();
 }
 
-class _MainScreenState extends State<MainScreen>
+class _BaseScreenState extends State<BaseScreen>
     with SingleTickerProviderStateMixin {
   final AutoSizeGroup autoSizeGroup = AutoSizeGroup();
   int _bottomNavIndex = 0;
@@ -42,7 +42,6 @@ class _MainScreenState extends State<MainScreen>
                 size: 24,
                 color: color,
               ),
-              // If you want the title of the tab icons to show, uncomment the code below
               const SizedBox(height: 4),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -64,8 +63,6 @@ class _MainScreenState extends State<MainScreen>
         splashSpeedInMilliseconds: 300,
         notchSmoothness: NotchSmoothness.defaultEdge,
         gapLocation: GapLocation.none,
-        // leftCornerRadius: 32,
-        // rightCornerRadius: 32,
         onTap: (int index) => setState(
           () => _bottomNavIndex = index,
         ),

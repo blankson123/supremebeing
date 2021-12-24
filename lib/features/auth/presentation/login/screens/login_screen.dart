@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ionicons/ionicons.dart';
 
 import '/core/core.dart';
@@ -124,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               padding: EdgeInsets.zero,
                               backgroundColor: context.colors.primary,
                               onPressed: () =>
-                                  Get.toNamed<void>(AppRoutes.main),
+                                  Get.toNamed<void>(AppRoutes.base),
                               child: const Text(
                                 'SIGN IN',
                                 style: TextStyle(color: Colors.white),

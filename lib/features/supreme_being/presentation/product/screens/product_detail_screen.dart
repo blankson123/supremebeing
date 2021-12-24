@@ -228,7 +228,7 @@ class ProductDetails extends StatelessWidget {
                       // enabled: state.formIsValid,
                       padding: EdgeInsets.zero,
                       backgroundColor: context.colors.primary,
-                      onPressed: () => Get.toNamed<void>(AppRoutes.main),
+                      onPressed: () => Get.toNamed<void>(AppRoutes.base),
                       child: Text(
                         'ADD TO CART',
                         style: context.body1.copyWith(

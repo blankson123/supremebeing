@@ -44,7 +44,7 @@ extension EnvironmentX on Environment {
 
   String get url {
     return <Environment, String>{
-      Environment.development: 'https://demo.marketlinepos.com/api/',
+      Environment.development: 'http://192.168.0.180:8000/api/v1/',
       Environment.production: '',
     }[this]!;
   }

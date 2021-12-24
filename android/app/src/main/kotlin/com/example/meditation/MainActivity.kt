@@ -1,4 +1,4 @@
-package com.example.meditation
+package com.supremebeing.mobile
 
 import io.flutter.embedding.android.FlutterActivity
 

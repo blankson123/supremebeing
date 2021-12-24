@@ -1,19 +1,18 @@
 import 'package:get/get.dart';
 
-import '/features/auth/presentation/screens/login/login_screen.dart';
-import '/features/auth/presentation/screens/register/register_screen.dart';
+import '/features/auth/presentation/login/screens/login_screen.dart';
+import '/features/auth/presentation/register/register_screen.dart';
 import '/features/supreme_being/presentation/base/screens/base_screen.dart';
 import '/features/supreme_being/presentation/home/screens/home_screen.dart';
 import '/features/supreme_being/presentation/home/screens/video_screen.dart';
-import '/features/supreme_being/presentation/product/screens/temp_item_detail_screen.dart';
-
+import '/features/supreme_being/presentation/product/screens/product_detail_screen.dart';
 import 'app_routes.dart';
 
 class Pages {
   static final List<GetPage<AppRoutes>> pages = <GetPage<AppRoutes>>[
     GetPage<AppRoutes>(
-      name: AppRoutes.main,
-      page: () => const MainScreen(),
+      name: AppRoutes.base,
+      page: () => const BaseScreen(),
     ),
     GetPage<AppRoutes>(
       name: AppRoutes.home,
@@ -29,7 +28,7 @@ class Pages {
     ),
     GetPage<AppRoutes>(
       name: AppRoutes.itemDetails,
-      page: () => const TempItemDetails(),
+      page: () => const ProductDetails(),
     ),
     GetPage<AppRoutes>(
       name: AppRoutes.register,
